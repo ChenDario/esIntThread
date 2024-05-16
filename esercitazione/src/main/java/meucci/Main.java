@@ -2,12 +2,11 @@ package meucci;
 
 public class Main {
     public static void main(String[] args) {
-        MyThread mt = new MyThread();
+        MyThread t = new MyThread(); 
+        t.start();
 
-        mt.start();
-        for(int i = 0; i < 10; i++){
-            System.out.println("\n Sto contando dal main: " + i);
+        for(int i = 0; i < 10 ; i++){
+            System.out.println("\n Main contando: " + i);
         }
-
     }
 }
